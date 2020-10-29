@@ -1,0 +1,37 @@
+.Registro{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+ 
+}
+.display-4{
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.lead{
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.Address2{
+width: 350px;
+}
+
+.Address1{
+width: 350px;
+}
+
+.btn{
+margin: auto;
+}
+div{
+margin-top: 3mm;
+
+
+
+}
+.Logo_1{
+width: 10cm;
+height: 10cm;
+}
