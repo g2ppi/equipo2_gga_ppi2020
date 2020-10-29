@@ -1,0 +1,28 @@
+.Inicio{
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(0, 0, 0);
+  
+}
+.display-4{
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.lead{
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.inputName{
+  color: rgb(0, 0, 0)  
+}
+
+.inputPassword{
+  color: rgb(0, 0, 0)
+}
+
+.btn{
+margin: auto;
+}
