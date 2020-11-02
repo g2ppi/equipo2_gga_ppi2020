@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles.css";
 
+import { Otroinicio } from "../components/Otroinicio";
 import { Description } from "../components/Description";
-
 import { Registro } from "../components/Registro";
 import { Inicio } from "../components/Inicio";
-import { Otroinicio } from "../components/Otroinicio";
 import { Rutinas } from "../components/Rutinas";
 import { Alarma } from "../components/Alarma";
 import { Guia } from "../components/Guia";
 import { Confialarma } from "../components/Confialarma";
+import { Recordatorio } from "../components/Recordatorio";
 
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -26,9 +26,10 @@ export default function Ppicontainer() {
   <Route path="/Alarma" exact component={Alarma} />
   <Route path="/Guia" exact component={Guia} />
   <Route path="/Confialarma" exact component={Confialarma} />
-  
+  <Route path="/Recordatorio" exact component={Recordatorio} />
 
-  <Otroinicio></Otroinicio>
+
+ 
 
 </BrowserRouter>
 );
