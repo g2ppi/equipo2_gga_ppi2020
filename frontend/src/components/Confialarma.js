@@ -20,4 +20,4 @@ const {tit2,Descrip2} = props
 
 
 )
-};  
+};
