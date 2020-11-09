@@ -10,6 +10,10 @@ import { Alarma } from "../components/Alarma";
 import { Guia } from "../components/Guia";
 import { Confialarma } from "../components/Confialarma";
 import { Recordatorio } from "../components/Recordatorio";
+import { Menu } from "../components/Menu";
+import { Editar } from "../components/Editar";
+
+
 
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -27,7 +31,8 @@ export default function Ppicontainer() {
   <Route path="/Guia" exact component={Guia} />
   <Route path="/Confialarma" exact component={Confialarma} />
   <Route path="/Recordatorio" exact component={Recordatorio} />
-
+  <Route path="/Menu" exact component={Menu} />
+  <Route path="/Editar" exact component={Editar} />
 
  
 

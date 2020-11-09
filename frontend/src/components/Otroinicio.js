@@ -36,6 +36,11 @@ const {tit2,Descrip2} = props
     <Link to="/Registro" > <button className="btn btn-primary" > Registrar </button> </Link>
 
     </div>
+
+    <div>
+    <Link to="/Menu" > <button className="btn btn-primary" >Ingresar como administrador </button> </Link>
+
+    </div>
     
   </form>
 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Header.css";
+import {Link} from 'react-router-dom';
 
 export const Header = (props) => {
   const { navBar, buttonText } = props;
