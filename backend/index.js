@@ -5,7 +5,7 @@ const app = express();
 const routes= require('./routes/routes');// crud
 const modulos = require('./routes/modulos');// crud
 const colegios = require('./routes/colegios');// crud
-
+//modificar const
 
 //ajustes
 app.set('port',3000)
@@ -20,7 +20,7 @@ app.use(express.json());
 app.use('/api',routes);
 app.use('/api/modulos',modulos);
 app.use('/api/colegios',colegios);
-
+//modificar api
 
 app.listen(app.get('port'),()=>{
     
