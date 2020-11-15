@@ -51,12 +51,12 @@ mysqlConnection.query(`UPDATE rutina
 });
 });
 
-  //PETICIÓN O SERVICIO DELETE - ELIMINACIÓN DE DATOS
-  router.delete('/tipo_usuario/:ID', (req,res) => {
+  //PETICIÓN DELETE - ELIMINACIÓN DE DATOS
+  router.delete('/rutina/:ID', (req,res) => {
     const { ID } = req.params;
-    mysqlConnection.query(`DELETE FROM tipo_usuario WHERE ID =?`,[ID],(err,rows,fields) => {
+    mysqlConnection.query(`DELETE FROM rutina WHERE ID =?`,[ID],(err,rows,fields) => {
       if("!err"){
-        res.json({status: `Tipo de usuario eliminado `})
+        res.json({status: `Rutina eliminada `})
       }else{
         console.log(err);
       }
