@@ -36,15 +36,15 @@ router.get('/rutina',(req,res)=>{
 
 //Petición put
   router.put('/rutina/:ID', (req,res) => {
-  const {descripcion,nombre} = req.body
+  const {alarma,fecha,hora} = req.body
   const { ID } = req.params 
 
-mysqlConnection.query(`UPDATE tipo_usuario
-                       SET descripcion=?,nombre=?
+mysqlConnection.query(`UPDATE rutina
+                       SET alarma=?,fecha=?,hora=?
                        WHERE ID = ?`,
-                       [nombre,descripcion,ID], (err, rows,fields) => {
+                       [alarma,fecha,hora,ID], (err, rows,fields) => {
    if(!err){
-    res.json({status: `Tipo de usuario actualizado `});
+    res.json({status: `Rutina actualizada `});
    }else{
      console.log(err);
    }
