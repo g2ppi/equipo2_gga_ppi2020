@@ -2,9 +2,12 @@ const express= require('express');
 const app = express();
 
 // definir todos los componentes, modulos app
-const routes= require('./routes/routes');// crud
-const modulos = require('./routes/modulos');// crud
-const colegios = require('./routes/colegios');// crud
+const ejercicio= require('./routes/ejercicio');// crud
+const ejercicio_usuario = require('./routes/ejercicio_usuario');// crud
+const rutina = require('./routes/rutina');// crud
+const rutina_usuario = require('./routes/rutina_usuario');// crud
+const usuario = require('./routes/usuario');// crud
+const tipo_de_usuario = require('./routes/tipo_de_usuario');// crud
 //modificar const
 
 //ajustes
