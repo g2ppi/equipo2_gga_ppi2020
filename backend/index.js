@@ -24,7 +24,7 @@ app.use('/api',ejercicio);
 app.use('/api/',ejercicio_usuario);
 app.use('/api/',rutina);
 app.use('/api/',rutina_usuario);
-app.use('/api/',);
+app.use('/api/',usuario);
 app.use('/api/',);
 //modificar api
 
