@@ -20,9 +20,12 @@ app.use(express.json());
 
 
 // ajustess
-app.use('/api',routes);
-app.use('/api/modulos',modulos);
-app.use('/api/colegios',colegios);
+app.use('/api',ejercicio);
+app.use('/api/',ejercicio_usuario);
+app.use('/api/',rutina);
+app.use('/api/',);
+app.use('/api/',);
+app.use('/api/',);
 //modificar api
 
 app.listen(app.get('port'),()=>{
