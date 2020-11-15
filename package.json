@@ -1,0 +1,30 @@
+{
+  "name": "equipo2ggappi2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g2ppi/equipo2_gga_ppi2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g2ppi/equipo2_gga_ppi2020/issues"
+  },
+  "homepage": "https://github.com/g2ppi/equipo2_gga_ppi2020#readme",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  }
+}

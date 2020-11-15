@@ -7,7 +7,7 @@ const ejercicio_usuario = require('./routes/ejercicio_usuario');// crud
 const rutina = require('./routes/rutina');// crud
 const rutina_usuario = require('./routes/rutina_usuario');// crud
 const usuario = require('./routes/usuario');// crud
-const tipo_de_usuario = require('./routes/tipo_usuario');// crud
+const tipo_de_usuario = require('./routes/tipo_de_usuario');// crud
 //modificar const
 
 //ajustes
@@ -25,7 +25,7 @@ app.use('/api/',ejercicio_usuario);
 app.use('/api/',rutina);
 app.use('/api/',rutina_usuario);
 app.use('/api/',usuario);
-app.use('/api/',tipo_usuario);
+app.use('/api/',tipo_de_usuario);
 //modificar api
 
 app.listen(app.get('port'),()=>{
