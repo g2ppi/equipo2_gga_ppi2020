@@ -36,4 +36,10 @@ router.get('/', (req, res) => {
       let Rutinarray= [ alarma, fecha, hora ];
       let nuevaRutina='INSERT INTO Rutina {alarma, fecha, hora}VALUES(?,?,?)';
       mysqlConnection.query(nuevaRutina, Rutinarray,(err,results,fields)=>{
+        
+          if(err){
+          return console.error(err);
+      }else{
+          res.json({message:nombre + 'Rutina creada'})
+      }
       
