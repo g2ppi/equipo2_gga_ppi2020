@@ -28,3 +28,6 @@ router.get('/', (req, res) => {
 const { nombre, descripcion } = req.body;
         let ejerciciorray= [ nombre, descripcion ];
         let nuevoejercicio='INSERT INTO ejercicio {nombre, descripcion}VALUES(?,?)';
+mysqlConnection.query(nuevoejercicio, ejerciciorray,(err,results,fields)=>{
+        
+        if(err){
