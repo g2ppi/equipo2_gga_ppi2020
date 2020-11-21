@@ -20,3 +20,5 @@ if(err){
 }else{
 console.log ('base de datos conectada ');
 }
+    })
+module.exports=mysqlConnection;
