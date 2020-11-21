@@ -11,3 +11,7 @@ router.get('/', (req, res) => {
           console.log(err);
       }
   
+
+  })//fin conexion consultada
+  });//fin mostrar todas las Rutina
+  
