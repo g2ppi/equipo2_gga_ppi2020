@@ -41,3 +41,8 @@ return console.error(err);
 router.put("/ejercicio/:id", (req, res) => {
         const { nombre, descripcion } = req.body;
         const {id} = req.params;
+mysqlConnection.query('UPDATE ejercicio set nombre=?,descripcion=? WHERE id=?',
+        [nombre, descripcion, id],(err, rows, fields)=>{
+            if(err){
+                res.json({status:'nombre' +nombre + 'actualizado'})
+            }else{
