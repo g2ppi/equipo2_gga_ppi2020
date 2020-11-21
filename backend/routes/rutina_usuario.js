@@ -15,4 +15,8 @@ router.get('/', (req, res) => {
     
     })//fin conexion consultada
   });//fin mostrar todas las Rutina
+
+router.get('/Rutina_usuario/id:', (req, res) => {
+    const {id}= req.params;
+    mysqlConnection.query('SELECT * FROM Rutina_usuario WHERE id=?', [id], (err,rows,fields)=>{
 module.exports = router;
