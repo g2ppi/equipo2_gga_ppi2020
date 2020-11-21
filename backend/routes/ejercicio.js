@@ -25,3 +25,5 @@ router.get('/', (req, res) => {
     //Agregar un nuevo ejercicio
     
     router.post("/nuevo-ejercico", (req, res) => {
+const { nombre, descripcion } = req.body;
+        let ejerciciorray= [ nombre, descripcion ];
