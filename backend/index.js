@@ -39,3 +39,4 @@ app.use('/api/',rutina);
 app.use('/api/',rutina_usuario);
 
 app.use('/api/',usuario);
+
