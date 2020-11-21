@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 
 router.get('/Rutina_usuario/id:', (req, res) => {
     const {id}= req.params;
-    mysqlConnection.query('SELECT * FROM Rutina_usuario WHERE id=?', [id], (err,rows,fields)=>{
+    mysqlConnection.query('SELECT * FROM Rutina_usuario WERE id=?', [id], (err,rows,fields)=>{
       if(!err){
             res.json(rows[0]);
         } else {
@@ -63,5 +63,5 @@ router.put("/Rutina_usuario/:id", (req, res) => {
     
         router.delete("/Rutina_usuario/:id", (req, res) => {
             const {id} = req.params;
-          
+           mysqlConnection.query('DELETE FROM Rutina_usuario WERE id=?',
 module.exports = router;
