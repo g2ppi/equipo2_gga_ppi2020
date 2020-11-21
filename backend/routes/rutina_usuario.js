@@ -37,4 +37,10 @@ router.post("/nueva-Rutina_usuario", (req, res) => {
         let nuevaRutina='INSERT INTO Rutina {id_rutinas, id_usuario, calificacion}VALUES(?,?,?)';
         mysqlConnection.query(nuevaRutina, Rutinarray,(err,results,fields)=>{
 
+          if(err){
+            return console.error(err);
+        }else{
+            res.json({message:nombre + 'Rutina creada'})
+        }
+          
 module.exports = router;
