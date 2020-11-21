@@ -25,4 +25,10 @@ router.get('/Rutina_usuario/id:', (req, res) => {
             console.log(err);
         }
       
+      })//fin conexion consultada por id 
+    
+    });//fin buscar rutina por su id  
+        
+    //Agregar una nueva rutina
+      
 module.exports = router;
