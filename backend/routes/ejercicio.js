@@ -55,3 +55,6 @@ console.log(err);
             mysqlConnection.query('DELETE FROM ejercicio WHERE id=?',
             [id],(err, rows, fields)=>{
                 if(err){
+res.json({status:'ejercicio eliminado'})
+                }else{
+                    console.log(err);
