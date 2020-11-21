@@ -14,3 +14,5 @@ const usuario = require('./routes/usuario');// crud
 
 const tipousuario = require('./routes/tipousuario');// crud
 
+
+//modificar const
