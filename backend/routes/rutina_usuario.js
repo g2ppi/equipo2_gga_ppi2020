@@ -8,4 +8,5 @@ router.get('/', (req, res) => {
   mysqlConnection.query('SELECT * FROM Rutina_usuario', (err,rows,fields)=>{
     
      if(!err){
+        res.json(rows);
 module.exports = router;
