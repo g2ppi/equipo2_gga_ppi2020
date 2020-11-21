@@ -23,3 +23,5 @@ console.log(err);
 //Agregar un nuevo ejercicio
   router.post("/nuevo-ejercico", (req, res) => {
         const { id_rutina, id_usuario } = req.body;
+ let ejerciciorray= [id_rutina, id_usuario ];
+        let nuevoejercicio='INSERT INTO ejercicio {id_rutina,
