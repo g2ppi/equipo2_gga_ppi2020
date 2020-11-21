@@ -34,3 +34,6 @@ res.json({message:nombre + 'ejercicio_usuario creado'})
         }
  })
     }); //fin guardar nuevo ejercicio
+ router.put("/ejercicio/:id", (req, res) => {
+        const {id_rutina, id_usuario } = req.body;
+        const {id} = req.params;
