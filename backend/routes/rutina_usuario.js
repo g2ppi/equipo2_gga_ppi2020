@@ -55,4 +55,6 @@ router.put("/Rutina_usuario/:id", (req, res) => {
                res.json({status:'id_rutinas' +id_rutinas + 'actualizado'})
             }else{
                 console.log(err);
+                }//fin si
+        })//fin consulta 
 module.exports = router;
