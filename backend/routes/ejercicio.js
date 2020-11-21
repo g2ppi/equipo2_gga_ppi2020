@@ -58,3 +58,5 @@ console.log(err);
 res.json({status:'ejercicio eliminado'})
                 }else{
                     console.log(err);
+}//fin si
+            });//fin elimnar
