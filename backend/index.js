@@ -20,3 +20,4 @@ const tipousuario = require('./routes/tipousuario');// crud
 //ajustes
 
 
+app.set('port',3000)
