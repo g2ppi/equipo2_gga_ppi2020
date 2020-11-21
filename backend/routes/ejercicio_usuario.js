@@ -56,3 +56,6 @@ res.json({status:'ejercicio_usuario eliminado'})
                     console.log(err);
                 }//fin si
  });//fin eliminar
+});//fin eliminar un ejercicio
+    
+    module.exports = router
