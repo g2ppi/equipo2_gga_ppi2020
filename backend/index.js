@@ -6,3 +6,4 @@ const ejercicio= require('./routes/ejercicio');// crud
 
 const ejercicio_usuario = require('./routes/ejercicio_usuario');// crud
 
+const rutina = require('./routes/rutina');// crud
