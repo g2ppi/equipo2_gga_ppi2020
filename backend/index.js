@@ -11,3 +11,4 @@ const rutina = require('./routes/rutina');// crud
 const rutina_usuario = require('./routes/rutina_usuario');// crud
 
 const usuario = require('./routes/usuario');// crud
+
