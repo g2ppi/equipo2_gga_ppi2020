@@ -12,3 +12,5 @@ console.log(err);
     });//fin mostrar todos los ejercicios
  router.get('/ejercicio_usuario/id:', (req, res) => {
     const {id}= req.params;
+     mysqlConnection.query('SELECT * FROM ejercicio_usuario WHERE id= ?', [id], (err,rows,fields)=>{
+        if(!err){
