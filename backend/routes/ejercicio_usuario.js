@@ -21,3 +21,5 @@ console.log(err);
 })//fin conexion consultada por id 
  });//fin buscar usuario por su id
 //Agregar un nuevo ejercicio
+  router.post("/nuevo-ejercico", (req, res) => {
+        const { id_rutina, id_usuario } = req.body;
