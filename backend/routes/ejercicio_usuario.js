@@ -48,3 +48,6 @@ console.log(err);
 });//fin modificar un ejercicio
 router.delete("/ejercicio_usuario/:id", (req, res) => {
             const {id} = req.params;
+ mysqlConnection.query('DELETE FROM ejercicio_usuario WHERE id=?',
+            [id],(err, rows, fields)=>{
+                if(err){
