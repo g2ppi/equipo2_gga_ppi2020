@@ -52,4 +52,7 @@ router.put("/Rutina_usuario/:id", (req, res) => {
         mysqlConnection.query('UPDATE Rutina set id_rutinas=?,id_usuario=?,calificacion=? WHERE id=?',
         [id_rutinas, id_usuario, calificacion, id],(err, rows, fields)=>{
             if(err){
+               res.json({status:'id_rutinas' +id_rutinas + 'actualizado'})
+            }else{
+                console.log(err);
 module.exports = router;
