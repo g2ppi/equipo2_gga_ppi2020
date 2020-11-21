@@ -27,3 +27,10 @@ const {id}= req.params;
     } else {
         console.log(err);
     }
+
+    
+})//fin conexion consultada por id 
+
+});//fin buscar usuario por su id  
+    
+//Agregar un nuevo usuario
