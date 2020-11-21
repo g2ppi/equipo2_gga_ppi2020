@@ -20,3 +20,4 @@ console.log(err);
         }
 })//fin conexion consultada por id 
  });//fin buscar usuario por su id
+//Agregar un nuevo ejercicio
