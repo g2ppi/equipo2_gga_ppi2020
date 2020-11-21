@@ -31,3 +31,10 @@ const { nombre, descripcion } = req.body;
 mysqlConnection.query(nuevoejercicio, ejerciciorray,(err,results,fields)=>{
         
         if(err){
+return console.error(err);
+        }else{
+            res.json({message:nombre + 'ejercicio creado'})
+        }
+    
+    })
+    }); //fin guardar nuevo ejercicio
