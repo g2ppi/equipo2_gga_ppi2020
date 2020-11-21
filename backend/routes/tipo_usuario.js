@@ -74,3 +74,14 @@ router.put("/tipousuario/:id", (req, res) => {
       mysqlConnection.query('DELETE FROM tipousuario WHERE id=?',
         [id],(err, rows, fields)=>{
             if(err){
+              
+               res.json({status:'Usuario eliminado'})
+            }else{
+                console.log(err);
+            }//fin si
+        });//fin elimnar
+    
+       
+        });//fin eliminar un usuario 
+
+
