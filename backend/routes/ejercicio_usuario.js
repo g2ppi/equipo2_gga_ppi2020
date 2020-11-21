@@ -45,3 +45,4 @@ res.json({status:'id_rutina' +id_rutina + 'actualizado'})
 console.log(err);
             }//fin si
         })//fin consulta 
+});//fin modificar un ejercicio
