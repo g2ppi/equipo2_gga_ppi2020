@@ -24,6 +24,7 @@ const tipousuario = require('./routes/tipousuario');// crud
 
 app.set('port',3000)
 
+
 // Middleware
 app.use(express.json());
 
