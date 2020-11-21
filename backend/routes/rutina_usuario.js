@@ -66,4 +66,5 @@ router.put("/Rutina_usuario/:id", (req, res) => {
            mysqlConnection.query('DELETE FROM Rutina_usuario WERE id=?',
            [id],(err, rows, fields)=>{
               if(err){
+                 res.json({status:'Rutina_usuario eliminada'})
 module.exports = router;
