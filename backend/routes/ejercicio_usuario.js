@@ -25,3 +25,5 @@ console.log(err);
         const { id_rutina, id_usuario } = req.body;
  let ejerciciorray= [id_rutina, id_usuario ];
         let nuevoejercicio='INSERT INTO ejercicio {id_rutina,
+id_usuario}VALUES(?,?)';
+        mysqlConnection.query(nuevoejercicio, ejerciciorray,(err,results,fields)=>{
