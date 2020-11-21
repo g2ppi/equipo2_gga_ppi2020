@@ -23,3 +23,9 @@ router.get('/', (req, res) => {
       } else {
           console.log(err);
       }
+
+      })//fin conexion consultada por id 
+  
+  });//fin buscar rutina por su id  
+      
+  //Agregar una nueva rutina
