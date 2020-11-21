@@ -62,3 +62,8 @@ router.put("/tipousuario/:id", (req, res) => {
            res.json({status:'nombre' +nombre + 'actualizado'})
         }else{
             console.log(err);
+
+             }//fin si
+    })//fin consulta 
+
+   
