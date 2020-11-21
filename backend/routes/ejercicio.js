@@ -15,5 +15,9 @@ router.get('/', (req, res) => {
     const {id}= req.params;
     mysqlConnection.query('SELECT * FROM ejercicio WHERE id= ?', [id], (err,rows,fields)=>{
         if(!err){
+  res.json(rows[0]);
+        } else {
+            console.log(err);
+        }
     
     
