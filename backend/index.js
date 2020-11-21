@@ -46,6 +46,7 @@ app.use('/api/',tipousuario);
 
 
 //modificar api
+
 app.listen(app.get('port'),()=>{
 console.log(`Servidor corriendo en puerto  ${app.get
 ('port')}`)
