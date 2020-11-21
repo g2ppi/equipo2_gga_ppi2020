@@ -11,3 +11,7 @@ mysqlConnection.query('SELECT * FROM tipousuario', (err,rows,fields)=>{
     } else {
         console.log(err);
     }
+
+  
+})//fin conexion consultada
+});//fin mostrar todos los usuarios
