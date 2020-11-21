@@ -70,4 +70,8 @@ router.put("/Rutina_usuario/:id", (req, res) => {
                 }else{
                   console.log(err);
                    }//fin si
+              });//fin elimnar
+        
+           
+            });//fin eliminar una Rutina
 module.exports = router;
