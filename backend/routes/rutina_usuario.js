@@ -57,4 +57,11 @@ router.put("/Rutina_usuario/:id", (req, res) => {
                 console.log(err);
                 }//fin si
         })//fin consulta 
+  
+  
+   });//fin modificar una Rutina
+    
+        router.delete("/Rutina_usuario/:id", (req, res) => {
+            const {id} = req.params;
+          
 module.exports = router;
