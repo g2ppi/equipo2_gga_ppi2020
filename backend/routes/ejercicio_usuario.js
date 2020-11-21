@@ -10,3 +10,5 @@ console.log(err);
         }
 })//fin conexion 
     });//fin mostrar todos los ejercicios
+ router.get('/ejercicio_usuario/id:', (req, res) => {
+    const {id}= req.params;
