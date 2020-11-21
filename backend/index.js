@@ -18,3 +18,5 @@ const tipousuario = require('./routes/tipousuario');// crud
 
 
 //ajustes
+
+
