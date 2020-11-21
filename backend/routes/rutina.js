@@ -77,3 +77,7 @@ router.get('/', (req, res) => {
       
          
           });//fin eliminar una Rutina
+
+  module.exports = router
+  
+  
