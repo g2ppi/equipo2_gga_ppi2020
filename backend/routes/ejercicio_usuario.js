@@ -51,3 +51,7 @@ router.delete("/ejercicio_usuario/:id", (req, res) => {
  mysqlConnection.query('DELETE FROM ejercicio_usuario WHERE id=?',
             [id],(err, rows, fields)=>{
                 if(err){
+res.json({status:'ejercicio_usuario eliminado'})
+                }else{
+                    console.log(err);
+                }//fin si
