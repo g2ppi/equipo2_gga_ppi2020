@@ -31,3 +31,4 @@ app.use(express.json());
 // ajustess
 
 app.use('/api/',ejercicio);
+
