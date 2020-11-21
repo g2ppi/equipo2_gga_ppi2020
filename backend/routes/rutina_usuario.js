@@ -45,4 +45,11 @@ router.post("/nueva-Rutina_usuario", (req, res) => {
           
           })
     }); //fin guardar nueva Rutina
+
+router.put("/Rutina_usuario/:id", (req, res) => {
+        const { id_rutinas, id_usuario, calificacion } = req.body;
+        const {id} = req.params;
+        mysqlConnection.query('UPDATE Rutina set id_rutinas=?,id_usuario=?,calificacion=? WHERE id=?',
+        [id_rutinas, id_usuario, calificacion, id],(err, rows, fields)=>{
+            if(err){
 module.exports = router;
