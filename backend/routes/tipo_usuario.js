@@ -71,3 +71,6 @@ router.put("/tipousuario/:id", (req, res) => {
     router.delete("/tipousuario/:id", (req, res) => {
         const {id} = req.params;
    
+      mysqlConnection.query('DELETE FROM tipousuario WHERE id=?',
+        [id],(err, rows, fields)=>{
+            if(err){
