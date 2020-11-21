@@ -37,3 +37,4 @@ app.use('/api/',ejercicio_usuario);
 app.use('/api/',rutina);
 
 app.use('/api/',rutina_usuario);
+
