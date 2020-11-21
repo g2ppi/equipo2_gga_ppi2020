@@ -19,5 +19,7 @@ router.get('/', (req, res) => {
         } else {
             console.log(err);
         }
+    })//fin conexion consultada por id 
     
+    });//fin buscar usuario por su id 
     
