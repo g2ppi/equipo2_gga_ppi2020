@@ -33,3 +33,5 @@ app.use(express.json());
 app.use('/api/',ejercicio);
 
 app.use('/api/',ejercicio_usuario);
+
+app.use('/api/',rutina);
