@@ -71,3 +71,9 @@ router.get('/', (req, res) => {
                   res.json({status:'Rutina eliminada'})
               }else{
                   console.log(err);
+                
+                 }//fin si
+          });//fin elimnar
+      
+         
+          });//fin eliminar una Rutina
