@@ -60,3 +60,6 @@ res.json({status:'ejercicio eliminado'})
                     console.log(err);
 }//fin si
             });//fin elimnar
+});//fin eliminar un ejercicio
+    
+    module.exports = router
