@@ -7,3 +7,9 @@ password:'yD0lQug8dkxePI8dmoIG',
 database:'bpegmilzjbod5uj5dold',
 multipleStatements:true
 /*
+host:'181.133.136.83',
+user:'mediatecnica',
+password:'123',
+database:'lab_mediatecnica',
+*/
+});
