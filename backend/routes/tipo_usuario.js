@@ -84,4 +84,7 @@ router.put("/tipousuario/:id", (req, res) => {
        
         });//fin eliminar un usuario 
 
+module.exports = router
+
+
 
