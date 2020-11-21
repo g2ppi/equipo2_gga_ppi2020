@@ -8,3 +8,5 @@ router.get('/', (req, res) => {
         } else {
 console.log(err);
         }
+})//fin conexion 
+    });//fin mostrar todos los ejercicios
