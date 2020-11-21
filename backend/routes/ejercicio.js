@@ -50,3 +50,8 @@ console.log(err);
             }//fin si
         })//fin consulta 
 });//fin modificar un ejercicio
+ router.delete("/ejercicio/:id", (req, res) => {
+            const {id} = req.params;
+            mysqlConnection.query('DELETE FROM ejercicio WHERE id=?',
+            [id],(err, rows, fields)=>{
+                if(err){
