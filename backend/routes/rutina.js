@@ -29,3 +29,11 @@ router.get('/', (req, res) => {
   });//fin buscar rutina por su id  
       
   //Agregar una nueva rutina
+
+
+  router.post("/nueva-Rutina", (req, res) => {
+      const { alarma, fecha, hora } = req.body;
+      let Rutinarray= [ alarma, fecha, hora ];
+      let nuevaRutina='INSERT INTO Rutina {alarma, fecha, hora}VALUES(?,?,?)';
+      mysqlConnection.query(nuevaRutina, Rutinarray,(err,results,fields)=>{
+      
