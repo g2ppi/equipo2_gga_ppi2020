@@ -29,6 +29,7 @@ app.set('port',3000)
 app.use(express.json());
 
 // ajustess
+
 app.use('/api/',ejercicio);
 app.use('/api/',ejercicio_usuario);
 app.use('/api/',rutina);
