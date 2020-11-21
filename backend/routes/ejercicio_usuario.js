@@ -27,3 +27,6 @@ console.log(err);
         let nuevoejercicio='INSERT INTO ejercicio {id_rutina,
 id_usuario}VALUES(?,?)';
         mysqlConnection.query(nuevoejercicio, ejerciciorray,(err,results,fields)=>{
+if(err){
+            return console.error(err);
+        }else{
