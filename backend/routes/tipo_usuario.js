@@ -41,3 +41,9 @@ router.post("/nuevo-tipousuario", (req, res) => {
     let Usuariorray= [ descripcion, nombre ];
     let nuevoUsuario='INSERT INTO tipousuario {descripcion, nombre}VALUES(?,?)';
     mysqlConnection.query(nuevotipousuario, Usuariorray,(err,results,fields)=>{
+      
+      if(err){
+        return console.error(err);
+    }else{
+        res.json({message:nombre + 'Usuario creado'})
+    }
