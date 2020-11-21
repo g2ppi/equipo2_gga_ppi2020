@@ -69,4 +69,5 @@ router.put("/Rutina_usuario/:id", (req, res) => {
                  res.json({status:'Rutina_usuario eliminada'})
                 }else{
                   console.log(err);
+                   }//fin si
 module.exports = router;
