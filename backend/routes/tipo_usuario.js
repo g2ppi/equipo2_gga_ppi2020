@@ -58,3 +58,7 @@ router.put("/tipousuario/:id", (req, res) => {
     mysqlConnection.query('UPDATE tipousuario set descripcion=?,nombre=? WHERE id=?',
     [descripcion, nombre, id],(err, rows, fields)=>{
         if(err){
+
+           res.json({status:'nombre' +nombre + 'actualizado'})
+        }else{
+            console.log(err);
