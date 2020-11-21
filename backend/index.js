@@ -40,3 +40,4 @@ app.use('/api/',rutina_usuario);
 
 app.use('/api/',usuario);
 
+app.use('/api/',tipousuario);
