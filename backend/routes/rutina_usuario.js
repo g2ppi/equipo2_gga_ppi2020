@@ -14,4 +14,5 @@ router.get('/', (req, res) => {
         }
     
     })//fin conexion consultada
+  });//fin mostrar todas las Rutina
 module.exports = router;
