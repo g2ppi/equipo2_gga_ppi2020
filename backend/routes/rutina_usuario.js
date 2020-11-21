@@ -11,4 +11,5 @@ router.get('/', (req, res) => {
         res.json(rows);
         } else {
           console.log(err);
+        }
 module.exports = router;
