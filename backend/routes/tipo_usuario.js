@@ -53,3 +53,8 @@ router.post("/nuevo-tipousuario", (req, res) => {
 
 router.put("/tipousuario/:id", (req, res) => {
     const { descripcion, nombre } = req.body;
+
+   const {id} = req.params;
+    mysqlConnection.query('UPDATE tipousuario set descripcion=?,nombre=? WHERE id=?',
+    [descripcion, nombre, id],(err, rows, fields)=>{
+        if(err){
