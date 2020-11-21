@@ -9,4 +9,5 @@ router.get('/', (req, res) => {
     
      if(!err){
         res.json(rows);
+        } else {
 module.exports = router;
