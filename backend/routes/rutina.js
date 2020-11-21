@@ -15,3 +15,11 @@ router.get('/', (req, res) => {
   })//fin conexion consultada
   });//fin mostrar todas las Rutina
   
+  router.get('/Rutina/id:', (req, res) => {
+  const {id}= req.params;
+  mysqlConnection.query('SELECT * FROM Rutina WHERE id=?', [id], (err,rows,fields)=>{
+      if(!err){
+          res.json(rows[0]);
+      } else {
+          console.log(err);
+      }
