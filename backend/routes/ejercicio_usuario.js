@@ -18,3 +18,4 @@ console.log(err);
         } else {
             console.log(err);
         }
+})//fin conexion consultada por id 
