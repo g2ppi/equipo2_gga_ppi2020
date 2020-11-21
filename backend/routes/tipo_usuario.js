@@ -15,3 +15,7 @@ mysqlConnection.query('SELECT * FROM tipousuario', (err,rows,fields)=>{
   
 })//fin conexion consultada
 });//fin mostrar todos los usuarios
+
+
+router.get('/tipousuario/id:', (req, res) => {
+const {id}= req.params;
