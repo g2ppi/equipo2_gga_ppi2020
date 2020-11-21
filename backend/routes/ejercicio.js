@@ -46,3 +46,6 @@ mysqlConnection.query('UPDATE ejercicio set nombre=?,descripcion=? WHERE id=?',
             if(err){
                 res.json({status:'nombre' +nombre + 'actualizado'})
             }else{
+console.log(err);
+            }//fin si
+        })//fin consulta 
