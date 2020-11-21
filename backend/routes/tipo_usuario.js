@@ -66,4 +66,8 @@ router.put("/tipousuario/:id", (req, res) => {
              }//fin si
     })//fin consulta 
 
+      });//fin modificar un usuario 
+
+    router.delete("/tipousuario/:id", (req, res) => {
+        const {id} = req.params;
    
