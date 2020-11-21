@@ -32,3 +32,5 @@ if(err){
         }else{
 res.json({message:nombre + 'ejercicio_usuario creado'})
         }
+ })
+    }); //fin guardar nuevo ejercicio
