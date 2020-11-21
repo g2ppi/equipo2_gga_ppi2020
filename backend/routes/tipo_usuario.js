@@ -47,3 +47,9 @@ router.post("/nuevo-tipousuario", (req, res) => {
     }else{
         res.json({message:nombre + 'Usuario creado'})
     }
+
+      })
+}); //fin guardar nuevo tipo usuario
+
+router.put("/tipousuario/:id", (req, res) => {
+    const { descripcion, nombre } = req.body;
