@@ -46,3 +46,13 @@ router.get('/', (req, res) => {
 
   })
   }); //fin guardar nueva Rutina
+
+ router.put("/Rutina/:id", (req, res) => {
+      const { alarma, fecha, hora } = req.body;
+      const {id} = req.params;
+      mysqlConnection.query('UPDATE Rutina set alarma=?,fecha=?,hora=? WHERE id=?',
+      [alarma, fecha, hora, id],(err, rows, fields)=>{
+          if(err){
+              res.json({status:'alarma' +alarma + 'actualizado'})
+          }else{
+              console.log(err);
