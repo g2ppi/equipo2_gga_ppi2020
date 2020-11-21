@@ -6,3 +6,5 @@ router.get('/', (req, res) => {
  if(!err){
             res.json(rows);
         } else {
+console.log(err);
+        }
