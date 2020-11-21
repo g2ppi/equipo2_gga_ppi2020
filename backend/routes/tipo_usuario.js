@@ -19,3 +19,6 @@ mysqlConnection.query('SELECT * FROM tipousuario', (err,rows,fields)=>{
 
 router.get('/tipousuario/id:', (req, res) => {
 const {id}= req.params;
+
+  mysqlConnection.query('SELECT * FROM tipousuario WHERE id= ?', [id], (err,rows,fields)=>{
+    if(!err){
