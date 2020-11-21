@@ -46,3 +46,5 @@ console.log(err);
             }//fin si
         })//fin consulta 
 });//fin modificar un ejercicio
+router.delete("/ejercicio_usuario/:id", (req, res) => {
+            const {id} = req.params;
