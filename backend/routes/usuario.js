@@ -4,6 +4,6 @@ const mysqlConnection =require('../db/db');
 
 
 router.get('/', (req, res) => {
-
+mysqlConnection.query('SELECT * FROM usuario', (err,rows,fields)=>{
 
 module.exports = router;
