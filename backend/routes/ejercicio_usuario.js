@@ -37,3 +37,4 @@ res.json({message:nombre + 'ejercicio_usuario creado'})
  router.put("/ejercicio/:id", (req, res) => {
         const {id_rutina, id_usuario } = req.body;
         const {id} = req.params;
+mysqlConnection.query('UPDATE ejercicio set id_rutina=?,id_usuario=? WHERE id=?',
