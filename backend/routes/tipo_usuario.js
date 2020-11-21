@@ -34,3 +34,10 @@ const {id}= req.params;
 });//fin buscar usuario por su id  
     
 //Agregar un nuevo usuario
+
+
+router.post("/nuevo-tipousuario", (req, res) => {
+    const { descripcion , nombre } = req.body;
+    let Usuariorray= [ descripcion, nombre ];
+    let nuevoUsuario='INSERT INTO tipousuario {descripcion, nombre}VALUES(?,?)';
+    mysqlConnection.query(nuevotipousuario, Usuariorray,(err,results,fields)=>{
