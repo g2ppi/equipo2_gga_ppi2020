@@ -63,3 +63,11 @@ router.get('/', (req, res) => {
      
       });//fin modificar una Rutina
   
+ router.delete("/Rutina/:id", (req, res) => {
+          const {id} = req.params;
+          mysqlConnection.query('DELETE FROM Rutina WHERE id=?',
+          [id],(err, rows, fields)=>{
+              if(err){
+                  res.json({status:'Rutina eliminada'})
+              }else{
+                  console.log(err);
