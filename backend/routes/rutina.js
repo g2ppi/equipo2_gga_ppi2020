@@ -43,3 +43,6 @@ router.get('/', (req, res) => {
           res.json({message:nombre + 'Rutina creada'})
       }
       
+
+  })
+  }); //fin guardar nueva Rutina
