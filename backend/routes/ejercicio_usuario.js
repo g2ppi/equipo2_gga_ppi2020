@@ -38,3 +38,5 @@ res.json({message:nombre + 'ejercicio_usuario creado'})
         const {id_rutina, id_usuario } = req.body;
         const {id} = req.params;
 mysqlConnection.query('UPDATE ejercicio set id_rutina=?,id_usuario=? WHERE id=?',
+ [id_rutina, id_usuario, id],(err, rows, fields)=>{
+            if(err){
