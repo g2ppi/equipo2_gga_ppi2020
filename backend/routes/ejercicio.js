@@ -38,3 +38,6 @@ return console.error(err);
     
     })
     }); //fin guardar nuevo ejercicio
+router.put("/ejercicio/:id", (req, res) => {
+        const { nombre, descripcion } = req.body;
+        const {id} = req.params;
