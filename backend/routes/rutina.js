@@ -56,3 +56,10 @@ router.get('/', (req, res) => {
               res.json({status:'alarma' +alarma + 'actualizado'})
           }else{
               console.log(err);
+
+               }//fin si
+      })//fin consulta 
+  
+     
+      });//fin modificar una Rutina
+  
