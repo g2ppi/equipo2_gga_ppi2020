@@ -5,3 +5,4 @@ const app = express();
 const ejercicio= require('./routes/ejercicio');// crud
 
 const ejercicio_usuario = require('./routes/ejercicio_usuario');// crud
+
