@@ -30,3 +30,5 @@ id_usuario}VALUES(?,?)';
 if(err){
             return console.error(err);
         }else{
+res.json({message:nombre + 'ejercicio_usuario creado'})
+        }
