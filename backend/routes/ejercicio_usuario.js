@@ -55,4 +55,4 @@ res.json({status:'ejercicio_usuario eliminado'})
                 }else{
                     console.log(err);
                 }//fin si
- });//fin elimnar
+ });//fin eliminar
