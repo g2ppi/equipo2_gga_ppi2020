@@ -49,3 +49,4 @@ mysqlConnection.query('UPDATE ejercicio set nombre=?,descripcion=? WHERE id=?',
 console.log(err);
             }//fin si
         })//fin consulta 
+});//fin modificar un ejercicio
